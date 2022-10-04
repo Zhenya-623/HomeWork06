@@ -5,17 +5,16 @@
 //метод преобразования массива с испольованием функции split
 int[] ConvertArray(string arrayStr)
 {
-    // преобразовываем массив с использованием метода PrintArray
     string [] array = arrayStr.Split(",");
-    int[] numarray = new int[array.Length];
+    int[] numArray = new int[array.Length];
     for (int i = 0; i < array.Length; i++)
     {
-        numarray[i] = int.Parse(array[i]);
+        numArray[i] = int.Parse(array[i]);
     }
-    return numarray;
+    return numArray;
 }
 
-
+//метод поиска и подсчета положительных чисел
 int FindPositiveNumber(int[] arr)
 {
     int length = arr.Length;
@@ -37,7 +36,7 @@ int FindPositiveNumber(int[] arr)
 Console.WriteLine("Введите массив чисел отделяя каждую цифру запятой без пробелов:");
 //в переменную arrayStr передаем введенные числа
 string arrayStr = Console.ReadLine() ?? "";
-// преобразовываем массив с использованием метода PrintArray
+// преобразовываем массив с использованием метода ConvertArray
 int[] result = ConvertArray(arrayStr);
 
 int countPositiveNumber = FindPositiveNumber(result);
