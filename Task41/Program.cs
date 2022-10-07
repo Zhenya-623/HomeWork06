@@ -41,3 +41,5 @@ int[] result = ConvertArray(arrayStr);
 
 int countPositiveNumber = FindPositiveNumber(result);
 Console.WriteLine("Количество чисел больше нуля:  " + countPositiveNumber);
+
+//При вводе более 5 чисел программа работает не корректно. Не понял в чем проблема.
